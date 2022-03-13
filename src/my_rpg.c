@@ -17,6 +17,6 @@ int main(int ac, char **av)
         display(game);
     }
     //destroy_all(game);
-    //free_mem(game);
+    free_mem(game);
     return 0;
 }

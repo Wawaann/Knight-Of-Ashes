@@ -14,5 +14,5 @@ void create_scene_mn_one(scene_mn_t *scene) //menu origin
 
 void create_scene_menu(game_t *game)
 {
-    create_scene_mn_one(game->scn_mn[0]);
+    create_scene_mn_one(game->scn[0]);
 }

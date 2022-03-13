@@ -55,15 +55,16 @@ typedef struct scene_gm_s {
     background_t *bg;
     button_t **btn;
     text_t **text;
+    char **map;
 } scene_gm_t;
 
 typedef struct game_s {
     int i;
+    int exit;
     bool game;
     sfRenderWindow *wndw;
     sfEvent event;
-    scene_mn_t **scn_mn;
-    scene_gm_t **scn_gm;
+    scene_mn_t **scn;
     sfMusic *menu;
 } game_t;
 

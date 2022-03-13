@@ -50,7 +50,7 @@ SYSTEM      =      -lcsfml-system
 WINDOW      =      -lcsfml-window
 
 CSFML       =       $(AUDIO) $(WINDOW) $(GRAFIC) $(SYSTEM)
-LIB			=		-L./lib/my -llib -L./lib/my -lmy_printf
+LIB			=			
 
 all:    $(NAME)
 

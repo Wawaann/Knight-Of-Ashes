@@ -12,7 +12,7 @@ background_t *create_bg(char *path, sfIntRect rect)
     background_t *bg = malloc(sizeof(background_t));
     bg->sprt = malloc(sizeof(sfSprite *) * 5);
     bg->txtr = malloc(sizeof(sfTexture *) * 5);
-    bg->rect = malloc(sizeof(sfIntRect *) * 4);
+    bg->rect = malloc(sizeof(sfIntRect) * 5);
     for (int i = 0; i < 5; i++)
         bg->sprt[i] = sfSprite_create();
     bg->txtr[0] = sfTexture_createFromFile("./asset/bg/sky.png", NULL);

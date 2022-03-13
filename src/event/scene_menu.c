@@ -11,8 +11,8 @@ void manage_scnmn_one(game_t *game, sfMouseButtonEvent mouse)
 {
     sfFloatRect btn;
 
-    for (int i = 0; game->scn_mn[0]->btn[i]; i++) {
-        btn = sfSprite_getGlobalBounds(game->scn_mn[0]->btn[i]->sprt);
+    for (int i = 0; game->scn[0]->btn[i]; i++) {
+        btn = sfSprite_getGlobalBounds(game->scn[0]->btn[i]->sprt);
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 0)
             game->i = 1;
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 1)
@@ -28,8 +28,8 @@ void manage_scnmn_two(game_t *game, sfMouseButtonEvent mouse)
 {
     sfFloatRect btn;
 
-    for (int i = 0; game->scn_mn[1]->btn[i]; i++) {
-        btn = sfSprite_getGlobalBounds(game->scn_mn[1]->btn[i]->sprt);
+    for (int i = 0; game->scn[1]->btn[i]; i++) {
+        btn = sfSprite_getGlobalBounds(game->scn[1]->btn[i]->sprt);
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 0) {
             game->game = true;
             game->i = 0;
@@ -51,8 +51,8 @@ void manage_scnmn_tree(game_t *game, sfMouseButtonEvent mouse)
 {
     sfFloatRect btn;
 
-    for (int i = 0; game->scn_mn[2]->btn[i]; i++) {
-        btn = sfSprite_getGlobalBounds(game->scn_mn[2]->btn[i]->sprt);
+    for (int i = 0; game->scn[2]->btn[i]; i++) {
+        btn = sfSprite_getGlobalBounds(game->scn[2]->btn[i]->sprt);
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 0)
             printf("sound!\n");
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 1)
@@ -78,8 +78,8 @@ void manage_scnmn_four(game_t *game, sfMouseButtonEvent mouse)
 {
     sfFloatRect btn;
 
-    for (int i = 0; game->scn_mn[3]->btn[i]; i++) {
-        btn = sfSprite_getGlobalBounds(game->scn_mn[3]->btn[i]->sprt);
+    for (int i = 0; game->scn[3]->btn[i]; i++) {
+        btn = sfSprite_getGlobalBounds(game->scn[3]->btn[i]->sprt);
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 0)
             game->i = 0;
         if (sfFloatRect_contains(&btn, mouse.x, mouse.y) && i == 1)

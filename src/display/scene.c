@@ -11,7 +11,7 @@ void display_scene_menu(game_t *game)
 {
     sfRenderWindow_clear(game->wndw, sfBlack);
     for (int i = 0; i < 5; i++) {
-        sfRenderWindow_drawSprite(game->wndw, game->scn_mn[0]->bg->sprt[i], NULL);
+        sfRenderWindow_drawSprite(game->wndw, game->scn[0]->bg->sprt[i], NULL);
     }
 }
 
