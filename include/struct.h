@@ -53,11 +53,19 @@ typedef struct map_s {
     int i;
 } map_t;
 
+typedef struct obj_s {
+    sfSprite *sprt;
+    sfTexture *txtr;
+    sfIntRect rect;
+    sfVector2f pos;
+} obj_t;
+
 typedef struct scene_s {
     background_t *bg;
     button_t **btn;
     text_t **text;
     map_t *map;
+    obj_t *fire;
 } scene_t;
 
 typedef struct game_s {
