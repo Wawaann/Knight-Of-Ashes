@@ -2,12 +2,12 @@
 ** EPITECH PROJECT, 2022
 ** my_Rpg
 ** File description:
-** read
+** for_read
 */
 
-#include "../include/my.h"
+#include "../../include/my.h"
 
-int get_size(char const *filepath)
+int get_byte(char const *filepath)
 {
     int byte = 0;
     FILE *fp;
@@ -27,7 +27,7 @@ char *get_buffer(char const *filepath)
 {
     int fd = open(filepath, O_RDONLY);
     char ch;
-    char *map = malloc(get_size(filepath));
+    char *map = malloc(get_byte(filepath));
     int i = 0;
 
     if (fd == -1)
@@ -35,13 +35,6 @@ char *get_buffer(char const *filepath)
     for (; read(fd, &ch, 1) > 0; i++) {
         map[i] = ch;
     }
-    map[i + 1] = '\0';
+    map[i] = '\0';
     return map;
-}
-
-int main(int ac, char **av)
-{
-    char *map = get_buffer(av[1]);
-    printf("%s", map);
-    return 0;
 }

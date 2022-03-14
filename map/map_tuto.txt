@@ -1,8 +1,10 @@
-tuto_lvl.png
-
+./asset/bg/tuto_lvl.png
+1
+nexus.txt
+80
                                                                                 
                                                                                 
-                                                   SFFFFFFF  PPP  FFFFFFFFSB    
-                                          FFFFFFFFFS#######       ########SF    
-FFFFFFFFFFFFFFFFFF  FFFFFFFFFFFFFFFFFFFFFF#################       ##########    
-##################  #######################################       ##########    
+                                                    SFFFFFFF  PPP  FFFFFFFFSB   
+ P                                    d   FFFFFFFFFS########       ########SF   
+FFFFFFFFFFFFFFFFFF  FFFFFFFFFFFFFFFFFFFFFF##################       ##########   
+##################  ########################################       ##########   

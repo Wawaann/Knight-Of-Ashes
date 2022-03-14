@@ -45,26 +45,29 @@ typedef struct text_s {
     sfFont *font;
 } text_t;
 
-typedef struct scene_mn_s {
-    background_t *bg;
-    button_t **btn;
-    text_t **text;
-} scene_mn_t;
-
-typedef struct scene_gm_s {
-    background_t *bg;
-    button_t **btn;
-    text_t **text;
+typedef struct map_s {
+    char *txtr;
+    char **lvl;
     char **map;
-} scene_gm_t;
+    int size;
+    int i;
+} map_t;
+
+typedef struct scene_s {
+    background_t *bg;
+    button_t **btn;
+    text_t **text;
+    map_t *map;
+} scene_t;
 
 typedef struct game_s {
+    char *filepath;
     int i;
     int exit;
     bool game;
     sfRenderWindow *wndw;
     sfEvent event;
-    scene_mn_t **scn;
+    scene_t **scn;
     sfMusic *menu;
 } game_t;
 

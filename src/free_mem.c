@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void free_scnu(scene_mn_t **scene)
+void free_scnu(scene_t **scene)
 {
     for (int i = 0; scene[i]; i++) {
         free(scene[i]->bg->rect);

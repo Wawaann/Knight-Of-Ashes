@@ -7,6 +7,7 @@
 
 CREATE		=		src/create/background.c 	\
 					src/create/button.c 		\
+					src/create/map.c 			\
 					src/create/scene_menu.c 	\
 					src/create/window.c 		\
 					src/create/text.c 			\
@@ -18,10 +19,11 @@ EVT			=		src/event/analyse.c 		\
 					src/event/scene_menu.c 		\
 
 INIT 		=		src/init/game.c 		\
-					src/init/scene_game.c 	\
 					src/init/scene_menu.c	\
 
 UTILS		=		lib/my/lib_printf/src/utils.c   \
+					src/utils/for_read.c 				\
+					src/utils/read.c 					\
 
 SRC 		=		src/my_rpg.c 		\
 					src/destroy_all.c 	\
@@ -50,7 +52,7 @@ SYSTEM      =      -lcsfml-system
 WINDOW      =      -lcsfml-window
 
 CSFML       =       $(AUDIO) $(WINDOW) $(GRAFIC) $(SYSTEM)
-LIB			=			
+LIB			=		-L./lib/my -llib -L./lib/my -lmy_printf
 
 all:    $(NAME)
 
