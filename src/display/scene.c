@@ -13,11 +13,11 @@ void display_scene_menu(game_t *game)
     for (int i = 0; i < 5; i++) {
         sfRenderWindow_drawSprite(game->wndw, game->scn[0]->bg->sprt[i], NULL);
     }
-    sfRenderWindow_drawSprite(game->wndw, game->scn[0]->fire->sprt, NULL);
 }
 
 void display(game_t *game)
 {
     display_scene_menu(game);
+    sfRenderWindow_drawSprite(game->wndw, game->ply->sprt, NULL);
     sfRenderWindow_display(game->wndw);
 }

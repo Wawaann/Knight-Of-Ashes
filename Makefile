@@ -9,6 +9,7 @@ CREATE		=		src/create/background.c 	\
 					src/create/button.c 		\
 					src/create/map.c 			\
 					src/create/obj.c 			\
+					src/create/player.c 		\
 					src/create/scene_menu.c 	\
 					src/create/window.c 		\
 					src/create/text.c 			\

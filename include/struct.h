@@ -60,6 +60,14 @@ typedef struct obj_s {
     sfVector2f pos;
 } obj_t;
 
+typedef struct mob_s {
+    sfSprite *sprt;
+    sfTexture *txtr;
+    sfVector2f pos;
+    sfIntRect rect;
+    int souls;
+} mob_t;
+
 typedef struct scene_s {
     background_t *bg;
     button_t **btn;
@@ -76,7 +84,7 @@ typedef struct game_s {
     sfRenderWindow *wndw;
     sfEvent event;
     scene_t **scn;
-    sfMusic *menu;
+    mob_t *ply;
 } game_t;
 
 #endif /* !STRUCT_H_ */

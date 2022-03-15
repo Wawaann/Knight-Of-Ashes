@@ -10,7 +10,6 @@
 void create_scene_mn_one(scene_t *scene, char *filepath) //menu origin
 {
     scene->map = create_map(filepath);
-    scene->fire = create_obj("./asset/obj/fire.png", (sfIntRect){0, 0, 64, 64}, (sfVector2f){128, 505}, (sfVector2f){2, 2});
     scene->bg = create_bg(scene->map->txtr ,(sfIntRect){0, 0, 1280, 720});
 }
 

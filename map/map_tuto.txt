@@ -1,4 +1,4 @@
-./asset/bg/tuto_lvl.png
+./asset/bg/tuto_lvl2.png
 1
 nexus.txt
 80

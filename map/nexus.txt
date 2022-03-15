@@ -1,4 +1,4 @@
-./asset/bg/nexus.png
+./asset/bg/nexus2.png
 3
 lvl_one.txt lvl_two.txt lvl_three.txt
 40

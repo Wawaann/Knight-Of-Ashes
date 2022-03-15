@@ -19,6 +19,7 @@ button_t *create_btn(char *path, sfIntRect rect);
 map_t *create_map(char *filepath);
 text_t *create_text(char *str, int size, sfVector2f pos);
 obj_t *create_obj(char *asset, sfIntRect rect, sfVector2f pos, sfVector2f scalb);
+mob_t *create_player(game_t *game);
 void set_btn(button_t *btn, sfVector2f pos, sfVector2f scl);
 void analyse_event(game_t *game);
 void manage_mouse_click(game_t *game, sfMouseButtonEvent mouse);
