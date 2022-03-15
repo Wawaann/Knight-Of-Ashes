@@ -14,7 +14,9 @@ CREATE		=		src/create/background.c 	\
 					src/create/window.c 		\
 					src/create/text.c 			\
 
-DIPS 		=		src/display/scene.c 		\
+DIPS 		=		src/display/all.c			\
+					src/display/animate.c 		\
+					src/display/scene.c 		\
 
 EVT			=		src/event/analyse.c 		\
 					src/event/manage_mouse.c 	\
@@ -23,7 +25,7 @@ EVT			=		src/event/analyse.c 		\
 INIT 		=		src/init/game.c 		\
 					src/init/scene_menu.c	\
 
-UTILS		=		lib/my/lib_printf/src/utils.c   \
+UTILS		=		lib/my/lib_printf/src/utils.c   	\
 					src/utils/for_read.c 				\
 					src/utils/read.c 					\
 

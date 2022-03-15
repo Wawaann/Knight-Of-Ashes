@@ -11,11 +11,10 @@ int main(int ac, char **av)
 {
     game_t *game = init_game(av[1]);
     create_scene_menu(game);
-    for (int i = 0; game->scn[0]->map->map[i]; i++)
-        printf("%s\n", game->scn[0]->map->map[i]);
     while (sfRenderWindow_isOpen(game->wndw)) {
         while (sfRenderWindow_pollEvent(game->wndw, &game->event))
             analyse_event(game);
+        animate(game);
         display(game);
     }
     //destroy_all(game);
@@ -23,6 +22,8 @@ int main(int ac, char **av)
     return 0;
 }
 
+// for (int i = 0; game->scn[0]->map->map[i]; i++)
+//         printf("%s\n", game->scn[0]->map->map[i]);
 // printf("txtr : %s\n", game->scn[0]->map->txtr);
 //     printf("lvl : ");
 //     for (int i = 0; game->scn[0]->map->lvl[i]; i++)

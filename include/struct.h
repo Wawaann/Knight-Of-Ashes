@@ -66,6 +66,9 @@ typedef struct mob_s {
     sfVector2f pos;
     sfIntRect rect;
     int souls;
+    sfClock *clock;
+    sfTime time;
+    float seconds;
 } mob_t;
 
 typedef struct scene_s {

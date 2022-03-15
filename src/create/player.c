@@ -9,20 +9,22 @@
 
 sfVector2f get_ply_pos(game_t *game)
 {
-    return (sfVector2f){160, 475};
+    return (sfVector2f){160, 580};
 }
 
 mob_t *create_player(game_t *game)
 {
     mob_t *ply = malloc(sizeof(mob_t));
+    ply->clock = sfClock_create();
     ply->sprt = sfSprite_create();
     ply->rect = (sfIntRect){0, 160, 120, 80};
-    ply->txtr = sfTexture_createFromFile("./asset/mob/knight.png", &ply->rect);
+    ply->txtr = sfTexture_createFromFile("./asset/mob/knight.png", NULL);
     ply->pos = get_ply_pos(game);
     sfSprite_setTexture(ply->sprt, ply->txtr, sfFalse);
-    sfSprite_setPosition(ply->sprt, ply->pos);
+    sfSprite_setTextureRect(ply->sprt, ply->rect);
     sfSprite_setScale(ply->sprt, (sfVector2f){2.55, 2.55});
     sfFloatRect tmp = sfSprite_getLocalBounds(ply->sprt);
-    sfSprite_setOrigin(ply->sprt, (sfVector2f){tmp.width / 2, tmp.height / 2});
+    sfSprite_setOrigin(ply->sprt, (sfVector2f){0, 80});
+    sfSprite_setPosition(ply->sprt, ply->pos);
     return ply;
 }

@@ -26,6 +26,7 @@ void manage_mouse_click(game_t *game, sfMouseButtonEvent mouse);
 void destroy_all(game_t *game);
 void free_mem(game_t *game);
 void display(game_t *game);
+void display_scene_menu(game_t *game);
 void create_scene_menu(game_t *game);
 void create_scene_one(scene_t *scene);
 void button_click(sfRenderWindow *window, button_t *button, sfIntRect newrect);
@@ -41,5 +42,7 @@ char *get_buffer(char const *filepath);
 void get_txtr(map_t *map, char *buf);void get_lvl(map_t *map, char *buf);
 void get_size(map_t *map, char *buf);
 void get_map(map_t *map, char *buf);
+
+void animate(game_t *game);
 
 #endif
