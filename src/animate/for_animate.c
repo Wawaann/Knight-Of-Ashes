@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2022
 ** my_Rpg
 ** File description:
-** animate
+** for_animate
 */
 
 #include "../../include/my.h"
@@ -20,19 +20,7 @@ void timer(mob_t *mob, float t, int x, int y)
     mob->time = sfClock_getElapsedTime(mob->clock);
     mob->seconds = mob->time.microseconds / 1000000.0;
     if (mob->seconds > t) {
-        move_rect(mob, &mob->rect, x, y);
+        move_rect(mob, &mob->rect[mob->i], x, y);
         sfClock_restart(mob->clock);
     }
-}
-
-void animate_knight(mob_t *ply)
-{
-    timer(ply, 0.06, 120, 1200);
-    sfSprite_setTextureRect(ply->sprt, ply->rect);
-    sfSprite_setPosition(ply->sprt, ply->pos);
-}
-
-void animate(game_t *game)  
-{
-    animate_knight(game->ply);
 }

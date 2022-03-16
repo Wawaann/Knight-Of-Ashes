@@ -64,8 +64,9 @@ typedef struct mob_s {
     sfSprite *sprt;
     sfTexture *txtr;
     sfVector2f pos;
-    sfIntRect rect;
+    sfIntRect *rect;
     int souls;
+    int i;
     sfClock *clock;
     sfTime time;
     float seconds;

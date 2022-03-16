@@ -35,8 +35,11 @@ void analyse_event(game_t *game)
         sfRenderWindow_close(game->wndw);
     // if (game->event.type == sfEvtMouseButtonPressed)
     //     manage_mouse_click(game, game->event.mouseButton);
-    if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyRight)
+    else if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyRight) {
+        sfSprite_setScale(game->ply->sprt, (sfVector2f){2.55, 2.55});
         move_right(game->scn[0], game->scn[0]->map->size - 1);
-    if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyLeft)
+    } else if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyLeft) {
+        sfSprite_setScale(game->ply->sprt, (sfVector2f){-2.55, 2.55});
         move_left(game->scn[0]);
+    }
 }

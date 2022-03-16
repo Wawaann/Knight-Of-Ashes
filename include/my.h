@@ -29,14 +29,6 @@ void display(game_t *game);
 void display_scene_menu(game_t *game);
 void create_scene_menu(game_t *game);
 void create_scene_one(scene_t *scene);
-void button_click(sfRenderWindow *window, button_t *button, sfIntRect newrect);
-void manage_scnmn_one(game_t *game, sfMouseButtonEvent mouse);
-void manage_scnmn_two(game_t *game, sfMouseButtonEvent mouse);
-void manage_scnmn_tree(game_t *game, sfMouseButtonEvent mouse);
-void manage_scnmn_four(game_t *game, sfMouseButtonEvent mouse);
-void manage_scgm_one(game_t *game, sfMouseButtonEvent mouse);
-void manage_scgm_two(game_t *game, sfMouseButtonEvent mouse);
-void manage_scgm_three(game_t *game, sfMouseButtonEvent mouse);
 
 char *get_buffer(char const *filepath);
 void get_txtr(map_t *map, char *buf);void get_lvl(map_t *map, char *buf);
@@ -44,5 +36,7 @@ void get_size(map_t *map, char *buf);
 void get_map(map_t *map, char *buf);
 
 void animate(game_t *game);
+void move_rect(mob_t *mob, sfIntRect *rect, int offset, int max_value);
+void timer(mob_t *mob, float t, int x, int y);
 
 #endif

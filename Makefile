@@ -5,6 +5,9 @@
 ## Makefile
 ##
 
+ANIMATE 	=		src/animate/animate.c 		\
+					src/animate/for_animate.c 	\
+
 CREATE		=		src/create/background.c 	\
 					src/create/button.c 		\
 					src/create/map.c 			\
@@ -15,12 +18,9 @@ CREATE		=		src/create/background.c 	\
 					src/create/text.c 			\
 
 DIPS 		=		src/display/all.c			\
-					src/display/animate.c 		\
 					src/display/scene.c 		\
 
 EVT			=		src/event/analyse.c 		\
-					src/event/manage_mouse.c 	\
-					src/event/scene_menu.c 		\
 
 INIT 		=		src/init/game.c 		\
 					src/init/scene_menu.c	\
@@ -32,6 +32,7 @@ UTILS		=		lib/my/lib_printf/src/utils.c   	\
 SRC 		=		src/my_rpg.c 		\
 					src/destroy_all.c 	\
 					src/free_mem.c 		\
+					$(ANIMATE)			\
 					$(CREATE)			\
 					$(DIPS)				\
 					$(EVT)				\
