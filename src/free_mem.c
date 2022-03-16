@@ -35,5 +35,6 @@ void free_scnu(scene_t **scene)
 void free_mem(game_t *game)
 {
     free_scnu(game->scn);
+    free(game->ply);
     free(game);
 }

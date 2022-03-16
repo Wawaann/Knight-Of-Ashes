@@ -27,7 +27,7 @@ void timer(mob_t *mob, float t, int x, int y)
 
 void animate_knight(mob_t *ply)
 {
-    timer(ply, 0.17, 120, 1200);
+    timer(ply, 0.06, 120, 1200);
     sfSprite_setTextureRect(ply->sprt, ply->rect);
     sfSprite_setPosition(ply->sprt, ply->pos);
 }

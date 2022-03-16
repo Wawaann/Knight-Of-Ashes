@@ -17,7 +17,7 @@ mob_t *create_player(game_t *game)
     mob_t *ply = malloc(sizeof(mob_t));
     ply->clock = sfClock_create();
     ply->sprt = sfSprite_create();
-    ply->rect = (sfIntRect){0, 160, 120, 80};
+    ply->rect = (sfIntRect){0, 80, 120, 80};
     ply->txtr = sfTexture_createFromFile("./asset/mob/knight.png", NULL);
     ply->pos = get_ply_pos(game);
     sfSprite_setTexture(ply->sprt, ply->txtr, sfFalse);
