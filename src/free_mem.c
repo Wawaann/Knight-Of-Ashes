@@ -32,9 +32,15 @@ void free_scnu(scene_t **scene)
     free(scene);
 }
 
+void free_ply(mob_t *ply)
+{
+    free(ply->rect);
+    free(ply);
+}
+
 void free_mem(game_t *game)
 {
     free_scnu(game->scn);
-    free(game->ply);
+    free_ply(game->ply);
     free(game);
 }
