@@ -9,10 +9,19 @@
 
 void move_rect(mob_t *mob, sfIntRect *rect, int offset, int max_value)
 {
-    if (rect->left + offset >= max_value) {
-        rect->left = 0;
-    } else
-        rect->left += offset;
+    if (mob->i < mob->loop) {
+        if (rect->left + offset >= max_value) {
+            rect->left = 0;
+        } else
+            rect->left += offset;
+    } else {
+        if (rect->left + offset >= max_value) {
+            mob->i = 0;
+            rect->left = 0;
+        } else {
+            rect->left += offset;
+        }
+    }
 }
 
 void timer(mob_t *mob, float t, int x, int y)

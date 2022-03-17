@@ -61,14 +61,15 @@ typedef struct obj_s {
 } obj_t;
 
 typedef struct mob_s {
+    sfClock *clock;
+    sfTime time;
     sfSprite *sprt;
     sfTexture *txtr;
     sfVector2f pos;
     sfIntRect *rect;
     int souls;
     int i;
-    sfClock *clock;
-    sfTime time;
+    int loop;
     float seconds;
 } mob_t;
 

@@ -7,39 +7,12 @@
 
 #include "../../include/my.h"
 
-void move_right(scene_t *scn, int size)
-{    
-    for (int i = 0; i < 5; i++) {
-        if (scn->bg->rect[4].left + i * 4 > size * 65)
-            scn->bg->rect[4].left = size * 65;
-        else
-            scn->bg->rect[i].left += i * 4;
-        sfSprite_setTextureRect(scn->bg->sprt[i], scn->bg->rect[i]);
-    }
-}
-
-void move_left(scene_t *scn)
-{
-    for (int i = 0; i < 5; i++) {
-        if (scn->bg->rect[i].left - i * 4 < 0)
-            scn->bg->rect[i].left = 0;
-        else
-            scn->bg->rect[i].left -= i * 4;
-        sfSprite_setTextureRect(scn->bg->sprt[i], scn->bg->rect[i]);
-    }
-}
-
 void analyse_event(game_t *game)
 {
     if (game->event.type == sfEvtClosed)
         sfRenderWindow_close(game->wndw);
-    // if (game->event.type == sfEvtMouseButtonPressed)
-    //     manage_mouse_click(game, game->event.mouseButton);
-    else if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyRight) {
-        sfSprite_setScale(game->ply->sprt, (sfVector2f){2.55, 2.55});
-        move_right(game->scn[0], game->scn[0]->map->size - 1);
-    } else if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyLeft) {
-        sfSprite_setScale(game->ply->sprt, (sfVector2f){-2.55, 2.55});
-        move_left(game->scn[0]);
-    }
+    if (game->event.type == sfEvtKeyPressed && game->ply->i < 2)
+        manage_input_pressed(game->wndw, game->event, game);
+    if (game->event.type == sfEvtKeyReleased && game->ply->i < 2)
+        manage_input_released(game->wndw, game->event, game);
 }

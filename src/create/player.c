@@ -9,7 +9,7 @@
 
 void set_ply_rect(mob_t *ply)
 {
-    ply->rect = malloc(sizeof(sfIntRect) * 8);
+    ply->rect = malloc(sizeof(sfIntRect) * 9);
     ply->rect[0] = (sfIntRect){0, 0, 120, 80};
     ply->rect[1] = (sfIntRect){0, 80, 120, 80};
     ply->rect[2] = (sfIntRect){0, 160, 120, 80};
@@ -18,12 +18,14 @@ void set_ply_rect(mob_t *ply)
     ply->rect[5] = (sfIntRect){0, 400, 120, 80};
     ply->rect[6] = (sfIntRect){0, 480, 120, 80};
     ply->rect[7] = (sfIntRect){0, 560, 120, 80};
+    ply->rect[8] = (sfIntRect){0, 640, 120, 80};
     ply->i = 0;
+    ply->loop = 4;
 }
 
 sfVector2f get_ply_pos(game_t *game)
 {
-    return (sfVector2f){200, 480+80};
+    return (sfVector2f){200, 480};
 }
 
 mob_t *create_player(game_t *game)

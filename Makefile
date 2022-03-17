@@ -21,6 +21,7 @@ DIPS 		=		src/display/all.c			\
 					src/display/scene.c 		\
 
 EVT			=		src/event/analyse.c 		\
+					src/event/manage_input.c 	\
 
 INIT 		=		src/init/game.c 		\
 					src/init/scene_menu.c	\
