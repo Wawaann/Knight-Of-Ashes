@@ -25,7 +25,7 @@ void set_ply_rect(mob_t *ply)
 
 sfVector2f get_ply_pos(game_t *game)
 {
-    return (sfVector2f){200, 480};
+    return (sfVector2f){80, 480};
 }
 
 mob_t *create_player(game_t *game)
@@ -38,7 +38,7 @@ mob_t *create_player(game_t *game)
     ply->pos = get_ply_pos(game);
     sfSprite_setTexture(ply->sprt, ply->txtr, sfFalse);
     sfSprite_setTextureRect(ply->sprt, ply->rect[ply->i]);
-    sfSprite_setScale(ply->sprt, (sfVector2f){2.55, 2.55});
+    sfSprite_setScale(ply->sprt, (sfVector2f){2.45, 2.45});
     sfSprite_setOrigin(ply->sprt, (sfVector2f){60, 40});
     sfSprite_setPosition(ply->sprt, ply->pos);
     return ply;

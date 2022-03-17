@@ -4,7 +4,7 @@ nexus.txt
 80
                                                                                 
                                                                                 
-                                                    SFFFFFFF  PPP  FFFFFFFFSB   
+                                                    SFFFFFFF  FFF  FFFFFFFFSf   
  P                                    d   FFFFFFFFFS########       ########SF   
 FFFFFFFFFFFFFFFFFF  FFFFFFFFFFFFFFFFFFFFFF##################       ##########   
 ##################  ########################################       ##########   
