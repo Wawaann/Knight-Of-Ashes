@@ -26,6 +26,8 @@ EVT			=		src/event/analyse.c 		\
 INIT 		=		src/init/game.c 		\
 					src/init/scene_menu.c	\
 
+MAP 		= 		src/map/get_pos.c 		\
+
 UTILS		=		lib/my/lib_printf/src/utils.c   	\
 					src/utils/for_read.c 				\
 					src/utils/read.c 					\
@@ -38,6 +40,7 @@ SRC 		=		src/my_rpg.c 		\
 					$(DIPS)				\
 					$(EVT)				\
 					$(INIT)				\
+					$(MAP)				\
 					$(UTILS)			\
 
 OBJ     	=       $(SRC:.c=.o)

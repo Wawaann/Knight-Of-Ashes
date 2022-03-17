@@ -41,4 +41,6 @@ void analyse_event(game_t *game);
 void manage_input_pressed(sfRenderWindow *wndw, sfEvent event, game_t *game);
 void manage_input_released(sfRenderWindow *wndw, sfEvent event, game_t *game);
 
+sfVector2f get_pos(map_t *map, char ch, int x_dec, int y_dec);
+
 #endif

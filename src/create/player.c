@@ -23,11 +23,6 @@ void set_ply_rect(mob_t *ply)
     ply->loop = 4;
 }
 
-sfVector2f get_ply_pos(game_t *game)
-{
-    return (sfVector2f){80, 480};
-}
-
 mob_t *create_player(game_t *game)
 {
     mob_t *ply = malloc(sizeof(mob_t));
@@ -35,7 +30,7 @@ mob_t *create_player(game_t *game)
     ply->clock = sfClock_create();
     ply->sprt = sfSprite_create();
     ply->txtr = sfTexture_createFromFile("./asset/mob/knight.png", NULL);
-    ply->pos = get_ply_pos(game);
+    ply->pos = get_pos(game->scn[0]->map, 'P', 45, 3);
     sfSprite_setTexture(ply->sprt, ply->txtr, sfFalse);
     sfSprite_setTextureRect(ply->sprt, ply->rect[ply->i]);
     sfSprite_setScale(ply->sprt, (sfVector2f){2.45, 2.45});

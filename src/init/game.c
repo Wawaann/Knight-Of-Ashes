@@ -18,7 +18,6 @@ game_t *init_game(char *filepath)
 {
     game_t *game = malloc(sizeof(game_t));
     scene_mn_init(game);
-    game->ply = create_player(game);
     game->filepath = filepath;
     game->wndw = create_window();
     game->i = 0;

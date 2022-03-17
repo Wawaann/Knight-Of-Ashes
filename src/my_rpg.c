@@ -11,6 +11,7 @@ int main(int ac, char **av)
 {
     game_t *game = init_game(av[1]);
     create_scene_menu(game);
+    game->ply = create_player(game);
     while (sfRenderWindow_isOpen(game->wndw)) {
         while (sfRenderWindow_pollEvent(game->wndw, &game->event))
             analyse_event(game);
