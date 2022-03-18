@@ -7,11 +7,11 @@
 
 ANIMATE 	=		src/animate/animate.c 		\
 					src/animate/for_animate.c 	\
+					src/animate/move.c 			\
 
 CREATE		=		src/create/background.c 	\
 					src/create/button.c 		\
 					src/create/map.c 			\
-					src/create/obj.c 			\
 					src/create/player.c 		\
 					src/create/scene_menu.c 	\
 					src/create/window.c 		\

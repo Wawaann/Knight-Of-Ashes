@@ -18,7 +18,7 @@ background_t *create_bg(char *path, sfIntRect rect);
 button_t *create_btn(char *path, sfIntRect rect);
 map_t *create_map(char *filepath);
 text_t *create_text(char *str, int size, sfVector2f pos);
-obj_t *create_obj(char *asset, sfIntRect rect, sfVector2f pos, sfVector2f scalb);
+obj_t *create_fire(game_t *game);
 mob_t *create_player(game_t *game);
 void set_btn(button_t *btn, sfVector2f pos, sfVector2f scl);
 void destroy_all(game_t *game);
@@ -42,5 +42,7 @@ void manage_input_pressed(sfRenderWindow *wndw, sfEvent event, game_t *game);
 void manage_input_released(sfRenderWindow *wndw, sfEvent event, game_t *game);
 
 sfVector2f get_pos(map_t *map, char ch, int x_dec, int y_dec);
+
+void move(game_t *game, int move);
 
 #endif

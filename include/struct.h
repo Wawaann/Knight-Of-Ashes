@@ -54,10 +54,13 @@ typedef struct map_s {
 } map_t;
 
 typedef struct obj_s {
+    sfClock *clock;
+    sfTime time;
     sfSprite *sprt;
     sfTexture *txtr;
     sfIntRect rect;
     sfVector2f pos;
+    float seconds;
 } obj_t;
 
 typedef struct mob_s {
@@ -67,9 +70,13 @@ typedef struct mob_s {
     sfTexture *txtr;
     sfVector2f pos;
     sfIntRect *rect;
-    int souls;
     int i;
     int loop;
+    int souls;
+    float atk_one;
+    float atk_two;
+    float life;
+    float stamina;
     float seconds;
 } mob_t;
 
@@ -78,7 +85,7 @@ typedef struct scene_s {
     button_t **btn;
     text_t **text;
     map_t *map;
-    obj_t *fire;
+    obj_t **fire;
 } scene_t;
 
 typedef struct game_s {

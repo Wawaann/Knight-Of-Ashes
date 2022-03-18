@@ -7,13 +7,13 @@
 
 #include "../../include/my.h"
 
-void create_scene_mn_one(scene_t *scene, char *filepath) //menu origin
+void create_scene_mn_one(scene_t *scene, game_t *game) //menu origin
 {
-    scene->map = create_map(filepath);
+    scene->map = create_map(game->filepath);
     scene->bg = create_bg(scene->map->txtr ,(sfIntRect){0, 0, 1280, 720});
 }
 
 void create_scene_menu(game_t *game)
 {
-    create_scene_mn_one(game->scn[0], game->filepath);
+    create_scene_mn_one(game->scn[0], game);
 }

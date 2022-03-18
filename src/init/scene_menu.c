@@ -13,7 +13,9 @@ scene_t *init_scene_menu(int btn, int txt)
     scene->bg = malloc(sizeof(background_t));
     scene->btn = malloc(sizeof(button_t *) * (btn + 1));
     scene->text = malloc(sizeof(text_t *) * (txt + 1));
+    scene->fire = malloc(sizeof(obj_t *) * 2);
     scene->btn[btn] = NULL;
     scene->text[txt] = NULL;
+    scene->fire[1] = NULL;
     return scene;
 }
