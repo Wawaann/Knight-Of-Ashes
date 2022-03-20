@@ -30,10 +30,10 @@ mob_t *create_player(game_t *game)
     ply->clock = sfClock_create();
     ply->sprt = sfSprite_create();
     ply->txtr = sfTexture_createFromFile("./asset/mob/knight.png", NULL);
-    ply->pos = get_pos(game->scn[0]->map, 'P', 45, 3);
+    ply->pos = get_pos(game->scn[0]->map, 'P', 45, -5);
     sfSprite_setTexture(ply->sprt, ply->txtr, sfFalse);
     sfSprite_setTextureRect(ply->sprt, ply->rect[ply->i]);
-    sfSprite_setScale(ply->sprt, (sfVector2f){2.45, 2.45});
+    sfSprite_setScale(ply->sprt, (sfVector2f){2.25, 2.25});
     sfSprite_setOrigin(ply->sprt, (sfVector2f){60, 40});
     sfSprite_setPosition(ply->sprt, ply->pos);
     return ply;

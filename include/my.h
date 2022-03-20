@@ -11,7 +11,7 @@
 #ifndef MY
     #define MY
 
-scene_t *init_scene_menu(int btn, int txt);
+scene_t *init_scene(int btn, int txt);
 game_t *init_game(char *filepath);
 sfRenderWindow *create_window(void);
 background_t *create_bg(char *path, sfIntRect rect);
@@ -25,8 +25,8 @@ void destroy_all(game_t *game);
 void free_mem(game_t *game);
 void display(game_t *game);
 void display_scene_menu(game_t *game);
-void create_scene_menu(game_t *game);
-void create_scene_one(scene_t *scene);
+void create_scene(game_t *game);
+void create_scn_one(scene_t *scene, game_t *game);
 
 char *get_buffer(char const *filepath);
 void get_txtr(map_t *map, char *buf);void get_lvl(map_t *map, char *buf);

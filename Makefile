@@ -24,7 +24,7 @@ EVT			=		src/event/analyse.c 		\
 					src/event/manage_input.c 	\
 
 INIT 		=		src/init/game.c 		\
-					src/init/scene_menu.c	\
+					src/init/scene.c		\
 
 MAP 		= 		src/map/get_pos.c 		\
 

@@ -63,6 +63,11 @@ typedef struct obj_s {
     float seconds;
 } obj_t;
 
+typedef struct fire_s {
+    obj_t *obj;
+    char **lvl;
+} fire_t;
+
 typedef struct mob_s {
     sfClock *clock;
     sfTime time;
@@ -73,8 +78,8 @@ typedef struct mob_s {
     int i;
     int loop;
     int souls;
-    float atk_one;
-    float atk_two;
+    float atk_o;
+    float atk_t;
     float life;
     float stamina;
     float seconds;
@@ -85,7 +90,7 @@ typedef struct scene_s {
     button_t **btn;
     text_t **text;
     map_t *map;
-    obj_t **fire;
+    fire_t **fire;
 } scene_t;
 
 typedef struct game_s {

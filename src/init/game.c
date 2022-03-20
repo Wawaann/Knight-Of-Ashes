@@ -10,7 +10,7 @@
 void scene_mn_init(game_t *game)
 {
     game->scn = malloc(sizeof(scene_t *) * 2);
-    game->scn[0] = init_scene_menu(4, 1);
+    game->scn[0] = init_scene(2, 4);
     game->scn[1] = NULL;
 }
 
