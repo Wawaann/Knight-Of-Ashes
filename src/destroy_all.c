@@ -9,9 +9,9 @@
 
 void destroy_mob(mob_t *mob)
 {
-    sfSprite_destroy(mob->sprt);
-    sfTexture_destroy(mob->txtr);
-    sfClock_destroy(mob->clock);
+    sfSprite_destroy(mob->obj->sprt);
+    sfTexture_destroy(mob->obj->txtr);
+    sfClock_destroy(mob->obj->clock);
 }
 
 void destroy_all(game_t *game)

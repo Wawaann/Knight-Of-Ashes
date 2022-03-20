@@ -34,8 +34,8 @@ void get_size(map_t *map, char *buf);
 void get_map(map_t *map, char *buf);
 
 void animate(game_t *game);
-void move_rect(mob_t *mob, sfIntRect *rect, int offset, int max_value);
-void timer(mob_t *mob, float t, int x, int y);
+void move_rect(obj_t *obj, sfIntRect *rect, int offset, int max_value);
+void timer(obj_t *obj, float t, int x, int y);
 
 void analyse_event(game_t *game);
 void manage_input_pressed(sfRenderWindow *wndw, sfEvent event, game_t *game);

@@ -58,8 +58,10 @@ typedef struct obj_s {
     sfTime time;
     sfSprite *sprt;
     sfTexture *txtr;
-    sfIntRect rect;
+    sfIntRect *rect;
     sfVector2f pos;
+    int i;
+    int loop;
     float seconds;
 } obj_t;
 
@@ -69,20 +71,12 @@ typedef struct fire_s {
 } fire_t;
 
 typedef struct mob_s {
-    sfClock *clock;
-    sfTime time;
-    sfSprite *sprt;
-    sfTexture *txtr;
-    sfVector2f pos;
-    sfIntRect *rect;
-    int i;
-    int loop;
+    obj_t *obj;
     int souls;
     float atk_o;
     float atk_t;
     float life;
     float stamina;
-    float seconds;
 } mob_t;
 
 typedef struct scene_s {

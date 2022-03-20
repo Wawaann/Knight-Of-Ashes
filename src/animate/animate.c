@@ -7,25 +7,25 @@
 
 #include "../../include/my.h"
 
-void animate_knight(mob_t *ply)
+void animate_knight(obj_t *obj)
 {
-    if (ply->i == 0 || ply->i == 1 || ply->i == 8)
-        timer(ply, 0.06, 120, 1200);
-    if (ply->i == 2 || ply->i == 3)
-        timer(ply, 0.07, 120, 360);
-    if (ply->i == 4)
-        timer(ply, 0.06, 120, 1440);
-    if (ply->i == 5)
-        timer(ply, 0.09, 120, 720);
-    if (ply->i == 6)
-        timer(ply, 0.07, 120, 480);
-    if (ply->i == 7)
-        timer(ply, 0.09, 120, 600);
-    sfSprite_setTextureRect(ply->sprt, ply->rect[ply->i]);
-    sfSprite_setPosition(ply->sprt, ply->pos);
+    if (obj->i == 0 || obj->i == 1 || obj->i == 8)
+        timer(obj, 0.06, 120, 1200);
+    if (obj->i == 2 || obj->i == 3)
+        timer(obj, 0.07, 120, 360);
+    if (obj->i == 4)
+        timer(obj, 0.06, 120, 1440);
+    if (obj->i == 5)
+        timer(obj, 0.09, 120, 720);
+    if (obj->i == 6)
+        timer(obj, 0.07, 120, 480);
+    if (obj->i == 7)
+        timer(obj, 0.09, 120, 600);
+    sfSprite_setTextureRect(obj->sprt, obj->rect[obj->i]);
+    sfSprite_setPosition(obj->sprt, obj->pos);
 }
 
 void animate(game_t *game)  
 {
-    animate_knight(game->ply);
+    animate_knight(game->ply->obj);
 }

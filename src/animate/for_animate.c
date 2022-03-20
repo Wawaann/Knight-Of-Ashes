@@ -7,16 +7,16 @@
 
 #include "../../include/my.h"
 
-void move_rect(mob_t *mob, sfIntRect *rect, int offset, int max_value)
+void move_rect(obj_t *obj, sfIntRect *rect, int offset, int max_value)
 {
-    if (mob->i < mob->loop) {
+    if (obj->i < obj->loop) {
         if (rect->left + offset >= max_value) {
             rect->left = 0;
         } else
             rect->left += offset;
     } else {
         if (rect->left + offset >= max_value) {
-            mob->i = 0;
+            obj->i = 0;
             rect->left = 0;
         } else {
             rect->left += offset;
@@ -24,12 +24,12 @@ void move_rect(mob_t *mob, sfIntRect *rect, int offset, int max_value)
     }
 }
 
-void timer(mob_t *mob, float t, int x, int y)
+void timer(obj_t *obj, float t, int x, int y)
 {
-    mob->time = sfClock_getElapsedTime(mob->clock);
-    mob->seconds = mob->time.microseconds / 1000000.0;
-    if (mob->seconds > t) {
-        move_rect(mob, &mob->rect[mob->i], x, y);
-        sfClock_restart(mob->clock);
+    obj->time = sfClock_getElapsedTime(obj->clock);
+    obj->seconds = obj->time.microseconds / 1000000.0;
+    if (obj->seconds > t) {
+        move_rect(obj, &obj->rect[obj->i], x, y);
+        sfClock_restart(obj->clock);
     }
 }

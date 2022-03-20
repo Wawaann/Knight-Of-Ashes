@@ -34,7 +34,8 @@ void free_scnu(scene_t **scene)
 
 void free_ply(mob_t *ply)
 {
-    free(ply->rect);
+    free(ply->obj->rect);
+    free(ply->obj);
     free(ply);
 }
 
