@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void destroy_mob(mob_t *mob)
+void destroy_mob(ply_t *mob)
 {
     sfSprite_destroy(mob->obj->sprt);
     sfTexture_destroy(mob->obj->txtr);

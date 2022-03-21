@@ -32,7 +32,7 @@ void free_scnu(scene_t **scene)
     free(scene);
 }
 
-void free_ply(mob_t *ply)
+void free_ply(ply_t *ply)
 {
     free(ply->obj->rect);
     free(ply->obj);

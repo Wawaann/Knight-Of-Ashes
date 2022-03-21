@@ -70,14 +70,20 @@ typedef struct fire_s {
     char **lvl;
 } fire_t;
 
-typedef struct mob_s {
+typedef struct ply_s {
     obj_t *obj;
     int souls;
-    float atk_o;
-    float atk_t;
+    float atk;
     float life;
     float stamina;
-} mob_t;
+} ply_t;
+
+typedef struct menu_s {
+    background_t *bg;
+    button_t **btn;
+    obj_t **mob;
+    text_t **txt;
+} menu_t;
 
 typedef struct scene_s {
     background_t *bg;
@@ -94,8 +100,9 @@ typedef struct game_s {
     bool game;
     sfRenderWindow *wndw;
     sfEvent event;
+    menu_t **mnu;
     scene_t **scn;
-    mob_t *ply;
+    ply_t *ply;
 } game_t;
 
 #endif /* !STRUCT_H_ */

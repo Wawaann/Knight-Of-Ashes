@@ -7,7 +7,7 @@
 
 #include "../../include/my.h"
 
-void set_ply_rect(mob_t *ply)
+void set_ply_rect(ply_t *ply)
 {
     ply->obj->rect = malloc(sizeof(sfIntRect) * 9);
     ply->obj->rect[0] = (sfIntRect){0, 0, 120, 80};
@@ -23,9 +23,9 @@ void set_ply_rect(mob_t *ply)
     ply->obj->loop = 4;
 }
 
-mob_t *create_player(game_t *game)
+ply_t *create_player(game_t *game)
 {
-    mob_t *ply = malloc(sizeof(mob_t));
+    ply_t *ply = malloc(sizeof(ply_t));
     ply->obj = malloc(sizeof(obj_t));
     set_ply_rect(ply);
     ply->obj->clock = sfClock_create();

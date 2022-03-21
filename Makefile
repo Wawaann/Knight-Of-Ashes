@@ -12,18 +12,21 @@ ANIMATE 	=		src/animate/animate.c 		\
 CREATE		=		src/create/background.c 	\
 					src/create/button.c 		\
 					src/create/map.c 			\
+					src/create/menu.c 			\
 					src/create/player.c 		\
-					src/create/scene_menu.c 	\
+					src/create/scene.c 	\
 					src/create/window.c 		\
 					src/create/text.c 			\
 
 DIPS 		=		src/display/all.c			\
+					src/display/menu.c 			\
 					src/display/scene.c 		\
 
 EVT			=		src/event/analyse.c 		\
 					src/event/manage_input.c 	\
 
 INIT 		=		src/init/game.c 		\
+					src/init/menu.c 		\
 					src/init/scene.c		\
 
 MAP 		= 		src/map/get_pos.c 		\
