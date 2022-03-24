@@ -4,7 +4,7 @@ lvl_one.txt lvl_two.txt lvl_three.txt
 40
                                         
                                         
-   P                                   S
+    P                                  S
 FFFFFS  f      SFFFFFFFFS          FFFFF
 ######SFFFFFFFS##########SF FF FFFF#####
 ###########################    #########

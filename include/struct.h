@@ -26,18 +26,18 @@
 #ifndef STRUCT_H_
 #define STRUCT_H_
 
+typedef struct background_s {
+    sfSprite **sprt;
+    sfTexture **txtr;
+    sfIntRect *rect;
+} background_t;
+
 typedef struct button_s {
     sfSprite *sprt;
     sfTexture *txtr;
     sfVector2f pos;
     sfIntRect rect;
 } button_t;
-
-typedef struct background_s {
-    sfSprite **sprt;
-    sfTexture **txtr;
-    sfIntRect *rect;
-} background_t;
 
 typedef struct text_s {
     char *str;
@@ -46,6 +46,11 @@ typedef struct text_s {
 } text_t;
 
 typedef struct map_s {
+    sfVector2f p_pos;
+    sfVector2f *m_pos;
+    sfVector2f *n_pos;
+    sfVector2f *f_pos;
+    sfVector2f *s_pos;
     char *txtr;
     char **lvl;
     char **map;
@@ -94,7 +99,6 @@ typedef struct scene_s {
 } scene_t;
 
 typedef struct game_s {
-    char *filepath;
     int i;
     int exit;
     bool game;

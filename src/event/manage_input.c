@@ -12,11 +12,11 @@ void manage_input_pressed(sfRenderWindow *wndw, sfEvent event, game_t *game)
     if (event.key.code == sfKeyRight) {
         game->ply->obj->i = 1;
         sfSprite_setScale(game->ply->obj->sprt, (sfVector2f){2.25, 2.25});
-        move(game, 1);
+        move(game, 1, game->i);
     } if (event.key.code == sfKeyLeft) {
         game->ply->obj->i = 1;
         sfSprite_setScale(game->ply->obj->sprt, (sfVector2f){-2.25, 2.25});
-        move(game, 2);
+        move(game, 2, game->i);
     }
 }
 

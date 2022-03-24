@@ -10,6 +10,6 @@
 void display_scene(game_t *game)
 {
     for (int i = 0; i < 5; i++) {
-        sfRenderWindow_drawSprite(game->wndw, game->scn[0]->bg->sprt[i], NULL);
+        sfRenderWindow_drawSprite(game->wndw, game->scn[game->i]->bg->sprt[i], NULL);
     }
 }

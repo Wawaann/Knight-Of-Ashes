@@ -22,7 +22,7 @@ void free_map(scene_t *scene)
 void free_scnu(scene_t **scene)
 {
     for (int i = 0; scene[i]; i++) {
-        free_map(scene[0]);
+        free_map(scene[i]);
         free(scene[i]->bg->rect);
         free(scene[i]->bg->sprt);
         free(scene[i]->bg->txtr);

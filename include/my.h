@@ -13,7 +13,7 @@
 
 scene_t *init_scene(int fire, int mob);
 menu_t *init_menu(int btn, int mob, int txt);
-game_t *init_game(char *filepath);
+game_t *init_game(void);
 sfRenderWindow *create_window(void);
 background_t *create_bg(char *path, sfIntRect rect);
 button_t *create_btn(char *path, sfIntRect rect);
@@ -45,7 +45,7 @@ void manage_input_released(sfRenderWindow *wndw, sfEvent event, game_t *game);
 
 sfVector2f get_pos(map_t *map, char ch, int x_dec, int y_dec);
 
-void move(game_t *game, int move);
+void move(game_t *game, int move, int i);
 
 void display_menu(game_t *game);
 

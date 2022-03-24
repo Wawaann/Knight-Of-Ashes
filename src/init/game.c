@@ -9,9 +9,10 @@
 
 void scene(game_t *game)
 {
-    game->scn = malloc(sizeof(scene_t *) * 2);
+    game->scn = malloc(sizeof(scene_t *) * 3);
     game->scn[0] = init_scene(2, 4);
-    game->scn[1] = NULL;
+    game->scn[1] = init_scene(2, 4);
+    game->scn[2] = NULL;
 }
 
 void menu(game_t *game)
@@ -21,14 +22,13 @@ void menu(game_t *game)
     game->mnu[1] = NULL;
 }
 
-game_t *init_game(char *filepath)
+game_t *init_game(void)
 {
     game_t *game = malloc(sizeof(game_t));
     scene(game);
     menu(game);
-    game->filepath = filepath;
     game->wndw = create_window();
-    game->i = 0;
-    game->game = false;
+    game->i = 1;
+    game->game = true;
     return game;
 }
