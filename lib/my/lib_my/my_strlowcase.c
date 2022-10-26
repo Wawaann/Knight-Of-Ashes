@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_lowcase
-** File description:
-** Met tout les caractère d'une
-** chaîne de caractère en minuscule.
-*/
 
 char *my_strlowcase(char *str)
 {

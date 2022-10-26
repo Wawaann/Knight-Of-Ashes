@@ -1,9 +1,3 @@
-##
-## EPITECH PROJECT, 2021
-## Makefile
-## File description:
-## Make des files.
-##
 
 SRC	=	lib_my/my_compute_power_rec.c		\
 		lib_my/my_compute_square_root.c		\

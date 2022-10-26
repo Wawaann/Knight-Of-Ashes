@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2022
-** B-MUL-200-NCE-2-1-myrpg-ewan.bigotte
-** File description:
-** mob
-*/
 
 #include "../../include/rpg.h"
 

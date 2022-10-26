@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Bin va
-** File description:
-** Bin va list
-*/
 
 #include "../include/my.h"
 

@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2022
-** B-MUL-200-NCE-2-1-mydefender-maxime.novarese
-** File description:
-** button
-*/
 
 #include "../../include/rpg.h"
 

@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strcat
-** File description:
-** Rassemble deux chaîne de caractère en une.
-*/
 
 int my_strlen(char const *str);
 

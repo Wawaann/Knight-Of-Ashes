@@ -1,9 +1,3 @@
-##
-## EPITECH PROJECT, 2021
-## Makefile
-## File description:
-## Makefile
-##
 
 ANIMATE =	src/animate/animate.c 		\
 			src/animate/for_animate.c 	\

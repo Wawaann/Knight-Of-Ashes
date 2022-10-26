@@ -1,9 +1,3 @@
-##
-## EPITECH PROJECT, 2021
-## Makefile
-## File description:
-## make des files
-##
 
 SRC    =	src/my_printf.c			\
 			src/va_bin.c 			\

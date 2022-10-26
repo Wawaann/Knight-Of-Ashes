@@ -1,5 +1,4 @@
 
-
 all:
 	@make -C my/ --quiet
 	@make -C csfml/ --quiet

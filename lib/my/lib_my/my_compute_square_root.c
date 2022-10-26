@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_compute_square_root
-** File description:
-** Donne la racine carré de nb.
-*/
 
 int my_compute_square_root(int nb)
 {

@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_put_adress
-** File description:
-** Affiche les adresses
-*/
 
 #include "../include/my.h"
 #include <stdarg.h>

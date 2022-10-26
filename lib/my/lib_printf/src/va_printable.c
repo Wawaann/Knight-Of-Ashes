@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Printable
-** File description:
-** printable va
-*/
 
 #include "../include/my.h"
 

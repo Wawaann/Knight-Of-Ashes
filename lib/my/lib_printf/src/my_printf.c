@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** disp_stdarg
-** File description:
-** Je sais pas ce qu sais
-*/
 
 #include "../include/my.h"
 #include  <stdio.h>

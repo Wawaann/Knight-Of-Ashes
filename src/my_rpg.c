@@ -1,13 +1,3 @@
-/*
-** EPITECH PROJECT, 2022
-** B-MUL-200-NCE-2-1-mydefender-maxime.novarese
-** File description:
-** main
-*/
-
-// TABLEAU de BOOL {letf, down, right}
-// sur true si il peut bouger, false sinon
-// tu lactualise a chaque tour de boucle en regaardant par raport au P sur la map->map
 
 #include "../include/rpg.h"
 

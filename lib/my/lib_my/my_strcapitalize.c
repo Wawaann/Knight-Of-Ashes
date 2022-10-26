@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strcapitalize
-** File description:
-** Met des majuscules au début de chaque mot.
-*/
 
 #include <stdio.h>
 

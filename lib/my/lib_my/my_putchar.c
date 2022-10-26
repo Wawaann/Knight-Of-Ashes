@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_putchar
-** File description:
-** Affiche un caractère.
-*/
 
 #include <unistd.h>
 

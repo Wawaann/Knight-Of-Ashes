@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2022
-** my_Rpg
-** File description:
-** for_animate
-*/
 
 #include "../../include/rpg.h"
 

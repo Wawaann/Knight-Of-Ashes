@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strcpy
-** File description:
-** fonction qui copy un str
-*/
 
 int my_strlen(char const *str);
 

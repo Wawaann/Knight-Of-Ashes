@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** B-CPE-110-NCE-1-1-BSQ-ewan.bigotte
-** File description:
-** utils2
-*/
 
 #include "../include/my.h"
 

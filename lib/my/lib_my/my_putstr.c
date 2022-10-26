@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_putstr
-** File description:
-** Affiche une chaîne de caractère.
-*/
 
 #include <unistd.h>
 

@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Unsigned int
-** File description:
-** unsigned int avec va
-*/
 
 #include "../include/my.h"
 

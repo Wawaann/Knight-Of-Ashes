@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2022
-** my_strtok
-** File description:
-** my_strtok
-*/
 
 #include <stdlib.h>
 

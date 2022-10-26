@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_compute_power_rec
-** File description:
-** Met nb à la puissance p.
-*/
 
 int my_compute_power_rec(int nb, int p)
 {

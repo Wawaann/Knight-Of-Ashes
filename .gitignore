@@ -1,2 +1,5 @@
-a_faire.txt
-lore.txt
+my_rpg
+*.o
+*.a
+libcsfml-*
+.vscode

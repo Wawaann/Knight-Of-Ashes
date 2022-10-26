@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Utils
-** File description:
-** Fonction utiles
-*/
 
 #include "../include/my.h"
 

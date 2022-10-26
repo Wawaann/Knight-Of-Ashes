@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** putpercent
-** File description:
-** va_putpercent
-*/
 
 #include "../include/my.h"
 

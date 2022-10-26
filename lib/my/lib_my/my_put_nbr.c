@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_put_nbr
-** File description:
-** Affiche un nombre.
-*/
-
 char my_putchar(char c);
 
 int my_put_nbr(int nb)

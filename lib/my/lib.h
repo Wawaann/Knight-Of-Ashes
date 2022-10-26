@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_header
-** File description:
-** Biblihotèque contenant tous les prototypes des fonctions
-*/
 
 #include <unistd.h>
 

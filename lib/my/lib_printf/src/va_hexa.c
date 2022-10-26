@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_put_hexa
-** File description:
-** Affiche un nombre en hexadecimal
-*/
 
 #include "../include/my.h"
 

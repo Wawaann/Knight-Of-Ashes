@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Put nbr va
-** File description:
-** Put nbr avec va_list
-*/
 
 #include "../include/my.h"
 

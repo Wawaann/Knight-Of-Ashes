@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strstr
-** File description:
-** Affiche une str à partir de l'occurence choisit.
-*/
 
 char *my_strstr(char *str, char *to_find)
 {

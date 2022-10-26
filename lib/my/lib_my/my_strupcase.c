@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strupcase
-** File description:
-** Met tout en maj.
-*/
 
 char *my_strupcase(char *str)
 {

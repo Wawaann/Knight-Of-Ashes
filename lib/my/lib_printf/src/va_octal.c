@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** Octal
-** File description:
-** octal va_list
-*/
 
 #include "../include/my.h"
 

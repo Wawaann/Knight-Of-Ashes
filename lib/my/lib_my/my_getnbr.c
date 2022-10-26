@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_getnbr
-** File description:
-** Extrait un nombre d'une chaîne de caractère.
-*/
 
 int my_char_isnum(char c)
 {

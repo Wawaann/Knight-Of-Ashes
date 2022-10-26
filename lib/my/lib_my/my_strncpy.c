@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_strncpy
-** File description:
-** Renvoie une copie de n caractère d'une
-** chaîne de caractère.
-*/
 
 char *my_strncpy(char *dest, char *src, int n)
 {

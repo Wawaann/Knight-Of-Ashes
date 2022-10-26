@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my.h
-** File description:
-** Functions prototypes of my lib.
-*/
 
 #ifndef MY
     #define MY

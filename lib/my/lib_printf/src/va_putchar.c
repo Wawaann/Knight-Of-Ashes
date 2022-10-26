@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** putchar va
-** File description:
-** Le putchar avec va
-*/
 
 #include "../include/my.h"
 

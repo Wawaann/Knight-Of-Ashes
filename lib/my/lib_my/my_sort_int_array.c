@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2021
-** my_sort_int_array
-** File description:
-** Tri un tableau d'entier.
-*/
 
 void my_sort_int_array(int *array, int size)
 {
