@@ -15,6 +15,8 @@
     #include <stdbool.h>
     #include <sys/types.h>
     #include <dirent.h>
+    #include <stdarg.h>
+    #include <stdio.h>
 
 //::::::::::::::::Basic lib functions::::::::::::::::
 void my_putchar(char c);
@@ -43,7 +45,5 @@ void va_putpercent(va_list *list);
 
 //:::::::::: Fonction my_printf :::::::::::::::::
 void my_printf(char *s, ...);
-
-void my_ls(DIR *dir);
 
 #endif

@@ -1,0 +1,10 @@
+./asset/bg/lvl4.png
+2
+1 0
+86
+                                                                                    
+                                          FFFFF                                     
+         a      c                     FF                                         f  
+ P   FFFFFFFFFFFFFFE           FFFFF               FFFFF               B     FFFFFFE
+FFFFF##############   FFFFFFFF                     #####FFFFFFFFFFFFFFFFFFFFF###### 
+###################                                ################################ 

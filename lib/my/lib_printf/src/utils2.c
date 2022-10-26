@@ -7,7 +7,6 @@
 
 #include "../include/my.h"
 
-
 char *my_revstr (char *str)
 {
     int i = 0;

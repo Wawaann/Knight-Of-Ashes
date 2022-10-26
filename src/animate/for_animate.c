@@ -5,7 +5,7 @@
 ** for_animate
 */
 
-#include "../../include/my.h"
+#include "../../include/rpg.h"
 
 void move_rect(obj_t *obj, sfIntRect *rect, int offset, int max_value)
 {

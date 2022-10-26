@@ -5,7 +5,6 @@
 ** Biblihotèque contenant tous les prototypes des fonctions
 */
 
-
 #include <unistd.h>
 
 #ifndef LIB
@@ -45,6 +44,6 @@ char *my_strupcase(char *str);
 void my_swap(int *a, int *b);
 
 //:::::::::: Fonction my_printf ::::::::::
-void my_printf(char*s, ...);
+void my_printf(char *s, ...);
 
 #endif

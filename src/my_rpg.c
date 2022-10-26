@@ -5,16 +5,20 @@
 ** main
 */
 
-#include "../include/my.h"
+// TABLEAU de BOOL {letf, down, right}
+// sur true si il peut bouger, false sinon
+// tu lactualise a chaque tour de boucle en regaardant par raport au P sur la map->map
+
+#include "../include/rpg.h"
 
 int main(int ac, char **av)
 {
     game_t *game = init_game();
     create_menu(game);
-    create_scene(game);
-    game->ply = create_player(game);
-    while (sfRenderWindow_isOpen(game->wndw)) {
-        while (sfRenderWindow_pollEvent(game->wndw, &game->event))
+    sfMusic_play(game->music);
+    sfMusic_setVolume(game->music, 100);
+    while (sfRenderWindow_isOpen(WNDW->wndw)) {
+        while (sfRenderWindow_pollEvent(WNDW->wndw, &WNDW->event))
             analyse_event(game);
         animate(game);
         display(game);

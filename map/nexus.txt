@@ -1,10 +1,10 @@
 ./asset/bg/nexus.png
-3
-lvl_one.txt lvl_two.txt lvl_three.txt
-40
-                                        
-                                        
-    P                                  S
-FFFFFS  f      SFFFFFFFFS          FFFFF
-######SFFFFFFFS##########SF FF FFFF#####
-###########################    #########
+1
+2
+41
+                                         
+                                         
+ P                                       
+FFFFFF  f       FFFFFFFFFFFE       FFFFF 
+######FFFFFFFFFF###########   FFFFF##### 
+###########################   ########## 

@@ -1,0 +1,10 @@
+./asset/bg/lvl2.png
+2
+1 4
+80
+                                                                                
+                                                                                
+             a                                                         m        
+ P    FFFFFFFFFFFFF     s      c        s                    a  FFFFFFFFFFFF f  
+ FFFFF#############FFFFFFFFFFFFFFFFFF  FFF       c       FFFFFFF############FFE 
+ ####################################       FFFFFFFF  FFF#####################  

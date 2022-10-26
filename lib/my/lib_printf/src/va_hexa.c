@@ -6,10 +6,6 @@
 */
 
 #include "../include/my.h"
-#include <stdarg.h>
-#include <stdio.h>
-
-#include "../include/my.h"
 
 void my_put_hexa(long long nb, char ch)
 {

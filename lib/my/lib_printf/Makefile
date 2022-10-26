@@ -42,6 +42,5 @@ clean:
 	@rm -f $(OBJ)
 
 fclean:		clean
-	@rm -f ../$(LIB)
 
 re: fclean all

@@ -5,7 +5,7 @@
 ** free_mem
 */
 
-#include "../include/my.h"
+#include "../include/rpg.h"
 
 void free_map(scene_t *scene)
 {
@@ -19,7 +19,7 @@ void free_map(scene_t *scene)
     free(scene->map);
 }
 
-void free_scnu(scene_t **scene)
+void free_scn(scene_t **scene)
 {
     for (int i = 0; scene[i]; i++) {
         free_map(scene[i]);
@@ -32,6 +32,21 @@ void free_scnu(scene_t **scene)
     free(scene);
 }
 
+void free_mnu(menu_t **menu)
+{
+    for (int i = 0; menu[i]; i++) {
+        for (int j = 0; menu[i]->btn[j]; j++)
+            free(menu[i]->btn[j]);
+        for (int j = 0; menu[i]->txt[j]; j++)
+            free(menu[i]->txt[j]);
+        free(menu[i]->btn);
+        free(menu[i]->txt);
+        free(menu[i]->sound);
+        free(menu[i]);
+    }
+    free(menu);
+}
+
 void free_ply(ply_t *ply)
 {
     free(ply->obj->rect);
@@ -41,7 +56,10 @@ void free_ply(ply_t *ply)
 
 void free_mem(game_t *game)
 {
-    free_scnu(game->scn);
-    free_ply(game->ply);
+    if (PLY != NULL) {
+        free_ply(PLY);
+        free_scn(SCN);
+    }
+    free_mnu(MNU);
     free(game);
 }
