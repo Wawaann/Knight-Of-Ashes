@@ -87,6 +87,7 @@ CSFML   =	$(AUDIO) $(GRAFIC) $(SYSTEM) $(WINDOW)
 LIB		=	-L./lib/lib -llib -L./lib/lib -lmy_printf
 
 all: compile
+.PHONY: all
 
 init:
 	@/bin/echo -e "$(BOLD)$(CYAN)Initialization of repository...$(DEFAULT)"
@@ -98,6 +99,7 @@ init:
 	@make -s -C lib/ --no-print-directory
 	@rm -rf lib/csfml-sources.zip lib/tmp/
 	@/bin/echo -e "$(BOLD)$(GREEN)Initialization done$(DEFAULT)"
+.PHONY: init
 
 compile:	${OBJECT}
 	@/bin/echo -e "$(BOLD)$(CYAN)Compilation of source files...$(DEFAULT)"
@@ -106,10 +108,18 @@ compile:	${OBJECT}
 	@rm -rf src/*.o src/**/*.o
 	@gcc -o $(NAME) $(OBJ) $(LIB) $(CSFML) -g3
 	@/bin/echo -e "$(BOLD)$(GREEN)Compilation done$(DEFAULT)"
+.PHONY: compile
+
+compile/lib:
+	@/bin/echo -e "$(BOLD)$(CYAN)Compilation of librairies...$(DEFAULT)"
+	@make -s -C lib/ --no-print-directory
+	@/bin/echo -e "$(BOLD)$(GREEN)Compilation done$(DEFAULT)"
+.PHONY: compile/lib
 
 clean:
 	@make -s clean -C lib/ --no-print-directory
 	@rm -rf obj/*
+.PHONY: clean
 
 fclean:         clean
 	@/bin/echo -e "$(DEFAULT)$(BLUE)Cleaning of project...$(DEFAULT)"
@@ -117,3 +127,4 @@ fclean:         clean
 	@rm -f $(NAME)
 	@rm -rf *.gc*
 	@/bin/echo -e "$(DEFAULT)$(GREEN)Cleaning done$(DEFAULT)"
+.PHONY: fclean
