@@ -86,36 +86,34 @@ WINDOW	=	-L./lib/lib -lcsfml-window
 CSFML   =	$(AUDIO) $(GRAFIC) $(SYSTEM) $(WINDOW)
 LIB		=	-L./lib/lib -llib -L./lib/lib -lmy_printf
 
-all:    $(NAME)
+all: compile
 
-$(NAME):	${OBJECT}
+init:
+	@/bin/echo -e "$(BOLD)$(CYAN)Initialization of repository...$(DEFAULT)"
+	@unzip lib/csfml-sources.zip -d lib/
+	@mv lib/CSFML-2.5 lib/csfml
+	@rm -rf lib/csfml/license.txt lib/csfml/readme.txt lib/csfml/doc
+	@cp -r lib/tmp/* lib/csfml/include/SFML/
+	@cmake lib/csfml/CMakeLists.txt
+	@make -s -C lib/ --no-print-directory
+	@rm -rf lib/csfml-sources.zip lib/tmp/
+	@/bin/echo -e "$(BOLD)$(GREEN)Initialization done$(DEFAULT)"
 
-	@/bin/echo -e "$(BOLD)$(CYAN)Compilation des fichiers sources..."
+compile:	${OBJECT}
+	@/bin/echo -e "$(BOLD)$(CYAN)Compilation of source files...$(DEFAULT)"
 	@cp -r src/* obj
 	@rm -rf obj/*.c obj/**/*.c
 	@rm -rf src/*.o src/**/*.o
 	@gcc -o $(NAME) $(OBJ) $(LIB) $(CSFML) -g3
-	@/bin/echo -e "$(BOLD)$(GREEN)Compilation terminée avec succès !$(DEFAULT)"
-
-init: ${OBJECT}
-	@/bin/echo -e "$(BOLD)$(CYAN)Compilation de la lib..."
-	@cp -r src/* obj
-	@rm -rf obj/*.c obj/**/*.c
-	@rm -rf src/*.o src/**/*.o
-	@make -C lib/ --quiet
-	@/bin/echo -e "$(BOLD)$(GREEN)Compilation términée$(DEFAULT)"
+	@/bin/echo -e "$(BOLD)$(GREEN)Compilation done$(DEFAULT)"
 
 clean:
-	@/bin/echo -e "$(DEFAULT)$(BLUE)Suppression des fichiers de la librairie..."
+	@make -s clean -C lib/ --no-print-directory
 	@rm -rf obj/*
-	@make clean -C lib/ --quiet
-	@/bin/echo -e "$(DEFAULT)$(GREEN)Suppression terminée avec succès."
 
 fclean:         clean
-	@/bin/echo -e "$(DEFAULT)$(BLUE)Suppression du binaire..."
+	@/bin/echo -e "$(DEFAULT)$(BLUE)Cleaning of project...$(DEFAULT)"
+	@make -s fclean -C lib/ --no-print-directory
 	@rm -f $(NAME)
 	@rm -rf *.gc*
-	@make fclean -C lib/ --quiet
-	@/bin/echo -e "$(DEFAULT)$(GREEN)Suppression terminée avec succès."
-
-re: fclean all
+	@/bin/echo -e "$(DEFAULT)$(GREEN)Cleaning done$(DEFAULT)"
