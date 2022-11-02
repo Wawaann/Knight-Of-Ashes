@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/Listener.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/Listener.cpp
 SFML/Audio/Listener.h
 -
 SFML/Audio/Listener.hpp
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/Music.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/Music.cpp
 SFML/Audio/Music.h
 -
 SFML/Audio/MusicStruct.h
@@ -20,7 +20,7 @@ SFML/Audio/MusicStruct.h
 SFML/Internal.h
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/Sound.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/Sound.cpp
 SFML/Audio/Sound.h
 -
 SFML/Audio/SoundStruct.h
@@ -28,7 +28,7 @@ SFML/Audio/SoundStruct.h
 SFML/Internal.h
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/SoundBuffer.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/SoundBuffer.cpp
 SFML/Audio/SoundBuffer.h
 -
 SFML/Audio/SoundBufferStruct.h
@@ -38,7 +38,7 @@ SFML/CallbackStream.h
 SFML/Internal.h
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/SoundBufferRecorder.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/SoundBufferRecorder.cpp
 SFML/Audio/SoundBufferRecorder.h
 -
 SFML/Audio/SoundBufferRecorderStruct.h
@@ -46,7 +46,7 @@ SFML/Audio/SoundBufferRecorderStruct.h
 SFML/Internal.h
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/SoundRecorder.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/SoundRecorder.cpp
 SFML/Audio/SoundRecorder.h
 -
 SFML/Audio/SoundRecorderStruct.h
@@ -54,7 +54,7 @@ SFML/Audio/SoundRecorderStruct.h
 SFML/Internal.h
 -
 
-/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/SoundStream.cpp
+/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/SoundStream.cpp
 SFML/Audio/SoundStream.h
 -
 SFML/Audio/SoundStreamStruct.h

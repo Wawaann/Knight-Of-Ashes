@@ -1,4 +1,4 @@
-# Install script for directory: /home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML
+# Install script for directory: /home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/System/cmake_install.cmake")
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Window/cmake_install.cmake")
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Network/cmake_install.cmake")
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Graphics/cmake_install.cmake")
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/Audio/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/System/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Window/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Network/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Graphics/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/Audio/cmake_install.cmake")
 
 endif()
 

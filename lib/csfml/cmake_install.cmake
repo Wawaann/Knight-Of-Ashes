@@ -1,4 +1,4 @@
-# Install script for directory: /home/ebigotte/Documents/perso/rpg/lib/csfml
+# Install script for directory: /home/ebigotte/Documents/perso/my_Rpg/lib/csfml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,20 +38,20 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/ebigotte/Documents/perso/rpg/lib/csfml/include" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/include" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/CSFML" TYPE FILE FILES "/home/ebigotte/Documents/perso/rpg/lib/csfml/license.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/CSFML" TYPE FILE FILES "/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/license.txt")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/CSFML" TYPE FILE FILES "/home/ebigotte/Documents/perso/rpg/lib/csfml/readme.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/CSFML" TYPE FILE FILES "/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/readme.txt")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ebigotte/Documents/perso/rpg/lib/csfml/src/SFML/cmake_install.cmake")
+  include("/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src/SFML/cmake_install.cmake")
 
 endif()
 
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ebigotte/Documents/perso/rpg/lib/csfml/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,10 +3,11 @@
 
 static void display_hud(game_t *game)
 {
-    for (int i = 0; i < 5; i++)
-        sfRenderWindow_drawSprite(WNDW->wndw, HUD->heart[i]->sprt, NULL);
-    for (int i = 0; i < 5; i++)
-        sfRenderWindow_drawSprite(WNDW->wndw, HUD->stamina[i]->sprt, NULL);
+    // for (int i = 0; i < 5; i++)
+    //     sfRenderWindow_drawSprite(WNDW->wndw, HUD->heart[i]->sprt, NULL);
+    // for (int i = 0; i < 5; i++)
+    //     sfRenderWindow_drawSprite(WNDW->wndw, HUD->stamina[i]->sprt, NULL);
+    sfRenderWindow_drawSprite(WNDW->wndw, HUD->hud->sprt, NULL);
 }
 
 void display_inv(game_t *game)

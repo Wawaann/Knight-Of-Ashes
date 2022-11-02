@@ -1,5 +1,6 @@
 
 #include "macros.h"
+#include "enums.h"
 
 #ifndef RPG_H
     #define RPG_H

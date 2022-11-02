@@ -26,12 +26,12 @@ void move_left(scene_t *scn, wndw_t *wndw)
 
 static void move_hud(game_t *game, bool neg)
 {
-    for (int i = 0; i < 5; i++) {
-        HUD->heart[i]->pos.x += neg ? -8 : 8;
-        HUD->stamina[i]->pos.x += neg ? -8 : 8;
-        sfSprite_setPosition(HUD->heart[i]->sprt, HUD->heart[i]->pos);
-        sfSprite_setPosition(HUD->stamina[i]->sprt, HUD->stamina[i]->pos);
-    }
+    // for (int i = 0; i < 5; i++) {
+    //     HUD->heart[i]->pos.x += neg ? -8 : 8;
+    //     HUD->stamina[i]->pos.x += neg ? -8 : 8;
+    //     sfSprite_setPosition(HUD->heart[i]->sprt, HUD->heart[i]->pos);
+    //     sfSprite_setPosition(HUD->stamina[i]->sprt, HUD->stamina[i]->pos);
+    // }
 }
 
 void move(game_t *game, int move, int i)

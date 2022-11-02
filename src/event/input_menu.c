@@ -7,11 +7,11 @@ void mv_btn_one(menu_t *mnu, int move)
         mnu->btn[1]->i = 2;
     else
         mnu->btn[1]->i = (mnu->btn[1]->i + move) % 3;
-    if (mnu->btn[1]->i == 0)
+    if (mnu->btn[1]->i == PLAY)
         mnu->btn[1]->pos = V2F(640, 409);
-    if (mnu->btn[1]->i == 1)
+    if (mnu->btn[1]->i == SETTINGS)
         mnu->btn[1]->pos = V2F(640, 459);
-    if (mnu->btn[1]->i == 2)
+    if (mnu->btn[1]->i == QUIT)
         mnu->btn[1]->pos = V2F(640, 509);
     sfSprite_setPosition(mnu->btn[1]->sprt, mnu->btn[1]->pos);
 }
@@ -22,24 +22,24 @@ void mv_btn_two(menu_t *mnu, int move)
         mnu->btn[0]->i = 4;
     else
         mnu->btn[0]->i = (mnu->btn[0]->i + move) % 5;
-    if (mnu->btn[0]->i == 0)
+    if (mnu->btn[0]->i == MODE)
         mnu->btn[0]->pos = V2F(740, 309);
-    if (mnu->btn[0]->i == 1)
+    if (mnu->btn[0]->i == SCREEN)
         mnu->btn[0]->pos = V2F(740, 359);
-    if (mnu->btn[0]->i == 2)
+    if (mnu->btn[0]->i == MUSIC)
         mnu->btn[0]->pos = V2F(740, 409);
-    if (mnu->btn[0]->i == 3)
+    if (mnu->btn[0]->i == BACK)
         mnu->btn[0]->pos = V2F(640, 609);
-    if (mnu->btn[0]->i == 4)
+    if (mnu->btn[0]->i == QUIT_SET)
         mnu->btn[0]->pos = V2F(640, 659);
     sfSprite_setPosition(mnu->btn[0]->sprt, mnu->btn[0]->pos);
 }
 
 void mn_mnu_one(game_t *game)
 {
-    if (MNU[IND]->btn[1]->i == 2)
+    if (MNU[IND]->btn[1]->i == QUIT)
         sfRenderWindow_close(WNDW->wndw);
-    if (MNU[IND]->btn[1]->i == 0) {
+    if (MNU[IND]->btn[1]->i == PLAY) {
         sfSound_play(MNU[IND]->sound[2]);
         game->game = true;
         IND = 0;
@@ -48,7 +48,7 @@ void mn_mnu_one(game_t *game)
         sfView_setCenter(WNDW->view, V2F(PLY->obj->pos.x, 360));
         HUD = create_hud(game);
         return;
-    } if (MNU[IND]->btn[1]->i == 1) {
+    } if (MNU[IND]->btn[1]->i == SETTINGS) {
         sfSound_play(MNU[IND]->sound[0]);
         IND = 1;
     }
@@ -57,7 +57,7 @@ void mn_mnu_one(game_t *game)
 void mn_mnu_two(game_t *game)
 {
     sfSound_play(MNU[IND]->sound[0]);
-    if (MNU[IND]->btn[0]->i == 0) {
+    if (MNU[IND]->btn[0]->i == MODE) {
         if (game->eric) {
             game->eric = false;
             sfText_setString(MNU[IND]->txt[2]->text, "no");
@@ -65,7 +65,7 @@ void mn_mnu_two(game_t *game)
             game->eric = true;
             sfText_setString(MNU[IND]->txt[2]->text, "yes");
         }
-    } if (MNU[IND]->btn[0]->i == 1) {
+    } if (MNU[IND]->btn[0]->i == SCREEN) {
         if (sfRenderWindow_getSize(WNDW->wndw).x == 1280) {
             sfRenderWindow_setSize(WNDW->wndw, (sfVector2u){1920, 1080});
             sfRenderWindow_setPosition(WNDW->wndw, (sfVector2i){0, 0});
@@ -75,7 +75,7 @@ void mn_mnu_two(game_t *game)
             sfRenderWindow_setPosition(WNDW->wndw, (sfVector2i){0, 0});
             sfText_setString(MNU[IND]->txt[4]->text, "no");
         }
-    } if (MNU[IND]->btn[0]->i == 2) {
+    } if (MNU[IND]->btn[0]->i == MUSIC) {
         if (sfMusic_getStatus(game->music) == sfPlaying) {
             sfMusic_pause(game->music);
             sfText_setString(MNU[IND]->txt[6]->text, "no");
@@ -83,9 +83,9 @@ void mn_mnu_two(game_t *game)
             sfMusic_play(game->music);
             sfText_setString(MNU[IND]->txt[6]->text, "yes");
         }
-    } if (MNU[IND]->btn[0]->i == 3)
+    } if (MNU[IND]->btn[0]->i == BACK)
         IND = 0;
-    if (MNU[IND]->btn[0]->i == 4)
+    if (MNU[IND]->btn[0]->i == QUIT_SET)
         sfRenderWindow_close(WNDW->wndw);
 }
 

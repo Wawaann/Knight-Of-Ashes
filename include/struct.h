@@ -165,6 +165,7 @@
     typedef struct hud_s {
         obj_t **heart;
         obj_t **stamina;
+        obj_t *hud;
     } hud_t;
 
     typedef struct end_s {

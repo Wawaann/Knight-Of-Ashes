@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -fvisibility=hidden
 
 CXX_DEFINES = -DCSFML_AUDIO_EXPORTS -DCSFML_EXPORTS
 
-CXX_INCLUDES = -I/home/ebigotte/Documents/perso/rpg/lib/csfml/include -I/home/ebigotte/Documents/perso/rpg/lib/csfml/src 
+CXX_INCLUDES = -I/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/include -I/home/ebigotte/Documents/perso/my_Rpg/lib/csfml/src 
 

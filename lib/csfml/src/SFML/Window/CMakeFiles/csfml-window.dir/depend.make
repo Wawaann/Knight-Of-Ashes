@@ -10,10 +10,21 @@ src/SFML/Window/CMakeFiles/csfml-window.dir/Clipboard.cpp.o: src/SFML/Internal.h
 
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: src/SFML/Window/Context.cpp
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Config.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Clock.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Export.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/InputStream.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Mutex.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Sleep.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Thread.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Time.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Types.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Vector2.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/System/Vector3.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Clipboard.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Context.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Cursor.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Event.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Export.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Joystick.h
@@ -21,6 +32,7 @@ src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/J
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Keyboard.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Mouse.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Sensor.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Touch.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Types.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/VideoMode.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Context.cpp.o: include/SFML/Window/Window.h
@@ -89,9 +101,21 @@ src/SFML/Window/CMakeFiles/csfml-window.dir/VideoMode.cpp.o: src/SFML/Internal.h
 
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: src/SFML/Window/Window.cpp
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Config.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Clock.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Export.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/InputStream.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Mutex.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Sleep.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Thread.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Time.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Types.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Vector2.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/System/Vector3.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Clipboard.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Context.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Cursor.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Event.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Export.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Joystick.h
@@ -99,6 +123,7 @@ src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Jo
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Keyboard.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Mouse.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Sensor.h
+src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Touch.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Types.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/VideoMode.h
 src/SFML/Window/CMakeFiles/csfml-window.dir/Window.cpp.o: include/SFML/Window/Window.h

@@ -68,7 +68,7 @@ SRC 	=	src/my_rpg.c 		\
 OBJECT	=	$(SRC:.c=.o)
 OBJ		=	obj/*.o obj/**/*.o
 
-NAME    =   my_rpg
+NAME    =   knightOfAshes
 
 BLUE    =   \e[34m
 BOLD    =   \e[1m
@@ -89,15 +89,21 @@ LIB		=	-L./lib/lib -llib -L./lib/lib -lmy_printf
 all:    $(NAME)
 
 $(NAME):	${OBJECT}
-	@/bin/echo -e "$(BOLD)$(CYAN)Compilation de la lib..."
-	@make -C lib/ --quiet
-	@/bin/echo -e "$(BOLD)$(GREEN)Compilation términée"
+
 	@/bin/echo -e "$(BOLD)$(CYAN)Compilation des fichiers sources..."
 	@cp -r src/* obj
 	@rm -rf obj/*.c obj/**/*.c
 	@rm -rf src/*.o src/**/*.o
 	@gcc -o $(NAME) $(OBJ) $(LIB) $(CSFML) -g3
 	@/bin/echo -e "$(BOLD)$(GREEN)Compilation terminée avec succès !$(DEFAULT)"
+
+init: ${OBJECT}
+	@/bin/echo -e "$(BOLD)$(CYAN)Compilation de la lib..."
+	@cp -r src/* obj
+	@rm -rf obj/*.c obj/**/*.c
+	@rm -rf src/*.o src/**/*.o
+	@make -C lib/ --quiet
+	@/bin/echo -e "$(BOLD)$(GREEN)Compilation términée$(DEFAULT)"
 
 clean:
 	@/bin/echo -e "$(DEFAULT)$(BLUE)Suppression des fichiers de la librairie..."
