@@ -1,10 +1,5 @@
 # KNIGHT OF ASHES
 
-# Summary
-
-* **[Summary](#summary)**
-* **[Compilation](#compilation)**
-
 # Compilation
 
 For compilation, you will have to run:
